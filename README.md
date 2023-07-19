@@ -34,6 +34,9 @@
 [![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)
 
 ![GitHub Logo](https://github.com/EstebanMqz.png?size=50) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
+
+[MarcoSC08](https://github.com/MarcoSC08)
+
 </Details></div>
 
 
@@ -43,44 +46,47 @@
 
 1. $f_1(x)$ over validation function $t_1(x)$ with *scipy* `optimize.fmin`.<br>
 
-<img src="/images/maxtx-fx.png" width="365" height="250">
+![f1_t1](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/maxtx-fx.png)
+
 <br><br>
 
 <i>(see nbviewer in <b>Repo Visualization 2-3</b>)</i>
 <br>
 
-2. Maximization arg max. in LaTeX <br>
-3. Inverse Transform Method in LaTeX.<br>
-4. Inverse Transform Method with `matplotlib`.<br>
+1. Maximization arg max. in LaTeX <br>
+   
+2. Inverse Transform Method in LaTeX.<br>
+   
+3. Inverse Transform Method with `matplotlib`.<br>
 
-<img src="/images/Inv.T-sampling.png" width="365" height="250">
+![IT](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/Inv.T-sampling.png)
 
-5. Acceptance-Rejection Method within $f_1(x)$ over $t_1(x)$.<br>
+4. Acceptance-Rejection Method within $f_1(x)$ over $t_1(x)$.<br>
 
-<img src="/images/ARf1-t1.png" width="365" height="250">
+![ARf1_t1](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/ARf1-t1.png)
 
 <b>Rejected values $\approx$ 0.256</b><br><br>
 
-1. Acceptance-Rejection Method of $f_1(x)$ over $t_2(x)$.<br>
+5. Acceptance-Rejection Method of $f_1(x)$ over $t_2(x)$.<br>
 
-<img src="/images/ARf1-t2.png" width="365" height="250">
+![ARf1_t2](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/ARf1-t2.png)
 
 <b>Rejected values $\approx$ 0.486</b><br>
 
-1. Acceptance-Rejection Method of $f_2(x)$ over $t_1(x)$ and $f_2(x)$ over $t_3(x)$.<br>
+6. Acceptance-Rejection Method of $f_2(x)$ over $t_1(x)$ and $f_2(x)$ over $t_3(x)$.<br>
    
-<img src="/images/ARf2-t1.png" width="365" height="250">
+![ARf2_t1](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/ARf2-t1.png)
 
 <b>Rejected values $\approx$ 0.446</b><br>
 
-<img src="/images/ARf2-t3.png" width="365" height="250">
+![ARf2_t3](https://github.com/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/images/ARf2-t3.png)
 
 <b>Rejected values $\approx$ 0.506</b><br>
 
 </Details>
 
 ###### Considerations:
-+ <i>Rejection sampling can be used with a given or unknown density function $f(x)$ or kernel modelled from its data.</i>
++ <i>Rejection sampling can be used with given/unknown functions $f(x)$ with its densities modelled by KDEs or other methods.</i><br>
 + <i>Proposing $t(x)$ can be hard.</i><br>
 
 ###### References:
@@ -90,9 +96,8 @@
 + [Inverse Transform samplings](https://en.wikipedia.org/wiki/Inverse_transform_sampling)
 + [Acceptance Rejection samplings](https://en.wikipedia.org/wiki/Rejection_sampling)
 + [<i>Pseudo-random number samplings</i>](https://en.wikipedia.org/wiki/Non-uniform_random_variate_generation#:~:text=Non-uniform%20random%20variate%20generation%20or%20pseudo-random%20number%20sampling,a%20uniformly%20distributed%20PRN%20generator.)<br>
-+ [<b>(PDF)</b> <i> Probability density function </i>](https://en.wikipedia.org/wiki/Probability_density_function)<br>
-+ [<b>(CDF)</b> <i> Cumulative distribution function </i>](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
-+ [Uniform distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Related_distributions)<br><br>
++ [f(x) Probability density function </i>](https://en.wikipedia.org/wiki/Probability_density_function)<br>
++ [F(x) Cumulative distribution function </i>](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
++ [Uniform distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Related_distributions)<br>
 + [`scipy.optimize.fmin`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin.html) 
-+ [`np.random.random`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html) 
-+ [`np.random.uniform`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html) 
++ [`np.random.random`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html) [`np.random.uniform`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html) 
