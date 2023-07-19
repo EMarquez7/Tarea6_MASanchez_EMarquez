@@ -1,7 +1,7 @@
 ## **Inverse Transform & Rejection Sampling** <br><br>
 
 <Details>
-<Summary> <i>Repository Tools:</i> </Summary>
+<Summary> <i>Tools:</i> </Summary>
   
 ##### Actions:  [![Repo-Visualization-Badge](https://img.shields.io/badge/Action-Visualization-020521?style=square&logo=github&logoColor=white)](https://githubnext.com/projects/repo-visualization)<br>
 ##### Main Text-Editor:  [![VSCode-Badge](https://img.shields.io/badge/VSCode-007ACC?style=square&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)  [![Jupyter-Badge](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=Jupyter&logoColor=white)](https://jupyter.org/try)<br>
@@ -15,68 +15,84 @@
 </Details>
 
 <Details>
+
+<a name ="repo-visualization"></a>
+
+<Summary> <i>Repo Visualization:</i> </Summary>
+
+[![Repository](https://img.shields.io/badge/Repository-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FInv.Transform-and-Rejection-Sampling) [![Jupyter](https://img.shields.io/badge/Render-nbviewer-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/Inv.T-Rejection-Sampling.ipynb)
+
+<img src="diagram.svg" width="280" height="280"><br><br>
+
+![Description](images/Description.jpg)
+</Details>
+
+<div align="right">
+<Details>
 <Summary> <i>Contact:</i> </Summary>
 
 [![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)
 
 ![GitHub Logo](https://github.com/EstebanMqz.png?size=50) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
-</Details>
+</Details></div>
 
-<Details>
-<Summary> <i>Repository Visualization:</i> </Summary>
-  
-[![Repository](https://img.shields.io/badge/Repository-0089D6?style=square&logo=microsoft-azure&logoColor=white)](https://mango-dune-07a8b7110.1.azurestaticapps.net/?repo=EstebanMqz%2FInv.Transform-and-Rejection-Sampling) [![Jupyter](https://img.shields.io/badge/Render-nbviewer-000000?style=square&logo=jupyter&logoColor=orange)](https://nbviewer.org/github/EstebanMqz/Inv.Transform-and-Rejection-Sampling/blob/main/Inv.T-Rejection-Sampling.ipynb)
 
-<img src="diagram.svg" width="280" height="280"><br><br>
-
-![Alt text](images/Description_Obj.jpg)
-</Details>
 
 <Details>
 <Summary> <b>Results:</b> </Summary>
 
 1. $f_1(x)$ over validation function $t_1(x)$ with *scipy* `optimize.fmin`.<br>
+
 <img src="/images/maxtx-fx.png" width="365" height="250">
 <br><br>
 
-<i>(see nbviewer in <b>Repo Visualization 2-3</b>)</i><br>
+<i>(see nbviewer in <b>Repo Visualization 2-3</b>)</i>
+<br>
+
 2. Maximization arg max. in LaTeX <br>
-3. Inverse Transform Method in LaTeX.<br><br>
+3. Inverse Transform Method in LaTeX.<br>
 4. Inverse Transform Method with `matplotlib`.<br>
+
 <img src="/images/Inv.T-sampling.png" width="365" height="250">
 
 5. Acceptance-Rejection Method within $f_1(x)$ over $t_1(x)$.<br>
+
 <img src="/images/ARf1-t1.png" width="365" height="250">
 
-<b>Rejected values are: 0.256</b><br><br>
+<b>Rejected values $\approx$ 0.256</b><br><br>
 
-6. Acceptance-Rejection Method of $f_1(x)$ over $t_2(x)$.<br>
+1. Acceptance-Rejection Method of $f_1(x)$ over $t_2(x)$.<br>
+
 <img src="/images/ARf1-t2.png" width="365" height="250">
 
-<b>Rejected values are: 0.486</b><br><br>
+<b>Rejected values $\approx$ 0.486</b><br>
 
-7. Acceptance-Rejection Method of $f_2(x)$ over $t_1(x)$ and $f_2(x)$ over $t_3(x)$.<br>
+1. Acceptance-Rejection Method of $f_2(x)$ over $t_1(x)$ and $f_2(x)$ over $t_3(x)$.<br>
+   
 <img src="/images/ARf2-t1.png" width="365" height="250">
-<br>
-<b>Rejected values are: 0.446</b><br>
-<br><br>
+
+<b>Rejected values $\approx$ 0.446</b><br>
+
 <img src="/images/ARf2-t3.png" width="365" height="250">
-<br>
-<b>Rejected values are: 0.506</b><br>
-<br>
-<i>Note: Random values generated are slightly different per execution. </i>
+
+<b>Rejected values $\approx$ 0.506</b><br>
+
 </Details>
 
 ###### Considerations:
-+ <i>Rejection sampling can be used with any $f(x)$.</i>
++ <i>Rejection sampling can be used with a given or unknown density function $f(x)$ or kernel modelled from its data.</i>
 + <i>Proposing $t(x)$ can be hard.</i><br>
 
+###### References:
 
-#### References:<br>
-[`scipy.optimize.fmin`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin.html) <br>
-[`np.random.rand`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html) <br>
-[`np.random.uniform`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html) <br>
-[Inverse-transform-sampling](https://en.wikipedia.org/wiki/Inverse_transform_sampling)<br>
-[Rejection-sampling](https://en.wikipedia.org/wiki/Rejection_sampling) <br>
+<a name ="References"></a>
 
-
++ [Inverse Transform samplings](https://en.wikipedia.org/wiki/Inverse_transform_sampling)
++ [Acceptance Rejection samplings](https://en.wikipedia.org/wiki/Rejection_sampling)
++ [<i>Pseudo-random number samplings</i>](https://en.wikipedia.org/wiki/Non-uniform_random_variate_generation#:~:text=Non-uniform%20random%20variate%20generation%20or%20pseudo-random%20number%20sampling,a%20uniformly%20distributed%20PRN%20generator.)<br>
++ [<b>(PDF)</b> <i> Probability density function </i>](https://en.wikipedia.org/wiki/Probability_density_function)<br>
++ [<b>(CDF)</b> <i> Cumulative distribution function </i>](https://en.wikipedia.org/wiki/Cumulative_distribution_function)<br>
++ [Uniform distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution#Related_distributions)<br><br>
++ [`scipy.optimize.fmin`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.fmin.html) 
++ [`np.random.random`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.rand.html) 
++ [`np.random.uniform`](https://numpy.org/doc/stable/reference/random/generated/numpy.random.uniform.html) 
